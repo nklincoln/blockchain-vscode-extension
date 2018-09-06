@@ -68,6 +68,7 @@ describe('Extension Tests', () => {
             'blockchainExplorer.addConnectionIdentityEntry',
             'blockchain.createSmartContractProjectEntry',
             'blockchainAPackageExplorer.refreshEntry',
+            'blockchainAPackageExplorer.deleteSmartContractPackage',
             'blockchainExplorer.startFabricRuntime',
             'blockchainExplorer.stopFabricRuntime',
             'blockchainExplorer.restartFabricRuntime'
@@ -89,6 +90,7 @@ describe('Extension Tests', () => {
             'onCommand:blockchain.createSmartContractProjectEntry',
             'onCommand:blockchainAPackageExplorer.refreshEntry',
             'onCommand:blockchainAPackageExplorer.packageSmartContractProject',
+            'onCommand:blockchainAPackageExplorer.deleteSmartContractPackage',
             'onCommand:blockchainExplorer.startFabricRuntime',
             'onCommand:blockchainExplorer.stopFabricRuntime',
             'onCommand:blockchainExplorer.restartFabricRuntime'

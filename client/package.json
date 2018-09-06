@@ -47,7 +47,8 @@
             "blockchainAPackageExplorer.packageSmartContractProject",
             "blockchainExplorer.startFabricRuntime",
             "blockchainExplorer.stopFabricRuntime",
-            "blockchainExplorer.restartFabricRuntime"
+            "blockchainExplorer.restartFabricRuntime",
+            "blockchainAPackageExplorer.deleteSmartContractPackageEntry"
         ]
     },
     "main": "./out/src/extension",
@@ -179,6 +180,11 @@
                 "command": "blockchainExplorer.restartFabricRuntime",
                 "title": "Restart Fabric Runtime",
                 "category": "Blockchain"
+            },
+            {
+                "command": "blockchainAPackageExplorer.deleteSmartContractPackage",
+                "title": "Delete Package",
+                "category": "Blockchain"
             }
         ],
         "menus": {
@@ -233,6 +239,10 @@
                 {
                     "command": "blockchainExplorer.restartFabricRuntime",
                     "when": "view == blockchainExplorer && viewItem == blockchain-runtime-item-started"
+                },
+                {
+                    "command": "blockchainAPackageExplorer.deleteSmartContractPackage",
+                    "when": "view == blockchainAPackageExplorer && viewItem == blockchain-package-item"
                 }
             ]
         }
